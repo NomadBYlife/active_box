@@ -68,6 +68,10 @@ body {
 
 }
 
+.header__svg-wrap {
+    display: none;
+}
+
 .menu__items {
     list-style: none;
     display: flex;
@@ -162,8 +166,8 @@ body {
 
 @media (max-width: 320px) {
     .container {
-        max-width: 300px;
-        padding: 0 10px;
+        max-width: 280px;
+        padding: 0;
     }
 
     .header {
@@ -175,8 +179,13 @@ body {
         height: 14px;
     }
 
-    .header__container {
-        padding: 21px 20px;
+    .header__svg-wrap {
+        width: 55px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
     .header__menu {
