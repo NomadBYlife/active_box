@@ -161,13 +161,14 @@ body {
 @media (max-width: 1024px) {
     .header__container::before {
         max-width: 984px;
+        width: 100%;
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
     .container {
-        max-width: 280px;
-        padding: 0;
+        max-width: 300px;
+        padding: 0 10px;
     }
 
     .header {
@@ -219,4 +220,7 @@ body {
         color: #FFFFFF;
         margin-bottom: 51px;
     }
+    .btn {
+        max-width: 280px;
+        }
 }
