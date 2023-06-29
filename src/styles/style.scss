@@ -337,15 +337,37 @@ body {
 
   .work {
     position: relative;
+    border: 2px solid rgba(255, 255, 255, 1);
 
-    &:hover::before {
-      content: 'Project name';
+    &__wrapper {
+    }
+
+    &__content {
       position: absolute;
-      background-color: #FF4343;
       width: 100%;
       height: 100%;
-      top: 0;
-      opacity: 0.8;
+      opacity: 0;
+      background: rgba(255, 67, 67, 0.8);
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 1024px) {
+        row-gap: 13px;
+      }
+      @media (max-width: 767px) {
+        row-gap: 5px;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 1;
+        background: rgba(185, 12, 12, 0.8);
+      }
     }
 
     &__image {
@@ -354,6 +376,28 @@ body {
       object-fit: cover;
     }
 
+    &__title {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      @media (max-width: 1024px) {
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FFFFFF;
+      @media (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
   }
 
 }
@@ -448,10 +492,11 @@ body {
 .social {
   display: flex;
   gap: 6px;
-  @media (max-width: 767px){
+  @media (max-width: 767px) {
     margin-bottom: 49px;
   }
-  &_pre-last{
+
+  &_pre-last {
     @media (max-width: 767px) {
       margin-bottom: 0;
     }
@@ -460,6 +505,7 @@ body {
     }
 
   }
+
   &_last {
     @media (max-width: 767px) {
       margin-bottom: 0;
