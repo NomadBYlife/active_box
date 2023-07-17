@@ -37,6 +37,8 @@ body {
   border: none;
   padding: 25px 0 26px;
   margin: 0 auto;
+  transition: all 1s ease;
+
   @media (max-width: 1024px) {
     max-width: 314px;
   }
@@ -50,6 +52,7 @@ body {
   &:hover {
     background: #E71414;
     cursor: pointer;
+    max-width: 420px;
   }
 
   &:active {
@@ -391,6 +394,7 @@ body {
       row-gap: 20px;
       align-items: center;
       justify-content: center;
+      transition: all 1s ease;
       @media (max-width: 1024px) {
         row-gap: 13px;
       }
@@ -946,6 +950,7 @@ body {
     @media (max-width: 767px) {
       column-gap: 16px;
     }
+
     &__svg-wrap {
       @media (max-width: 767px) {
         height: 33px;
